@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="E3I-jp-UC8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19j-Mg-KcR">
+                                <rect key="frame" x="25.5" y="198.5" width="324" height="270"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6T-2u-Pgz">
+                                        <rect key="frame" x="62" y="0.0" width="200" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.60646934021801358" blue="0.53077453142870867" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="E6n-fb-1at"/>
+                                            <constraint firstAttribute="height" constant="30" id="Qks-4S-7lj"/>
+                                        </constraints>
+                                        <state key="normal" title="Source Photo">
+                                            <color key="titleShadowColor" red="0.87980611909999995" green="0.87980611909999995" blue="0.87980611909999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sourcePhotoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKp-UN-Meb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQi-P5-GST">
+                                        <rect key="frame" x="62" y="80" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.67130304424078813" green="1" blue="0.62411786010165127" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Compared Photo">
+                                            <color key="titleShadowColor" red="0.87980611909999995" green="0.87980611909999995" blue="0.87980611909999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="comparedPhotoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oY5-Le-gRB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QyH-oO-kjC">
+                                        <rect key="frame" x="62" y="240" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.46816049586772213" green="1" blue="0.93169998400752685" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Compare">
+                                            <color key="titleShadowColor" red="0.87980611909999995" green="0.87980611909999995" blue="0.87980611909999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="compareClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="io1-Cj-4Ol"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnO-LY-LKL">
+                                        <rect key="frame" x="62" y="160" width="200" height="30"/>
+                                        <color key="backgroundColor" red="0.98310998090811541" green="0.77896907904436086" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Clear Photos">
+                                            <color key="titleShadowColor" red="0.87980611909999995" green="0.87980611909999995" blue="0.87980611909999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clearPhotosClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iG9-sb-yfh"/>
+                                            <action selector="compareClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aA6-P4-6fG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="QyH-oO-kjC" firstAttribute="width" secondItem="R6T-2u-Pgz" secondAttribute="width" id="2gX-4w-8JK"/>
+                                    <constraint firstAttribute="trailing" secondItem="rnO-LY-LKL" secondAttribute="trailing" constant="62" id="5OD-Ku-urJ"/>
+                                    <constraint firstItem="R6T-2u-Pgz" firstAttribute="top" secondItem="19j-Mg-KcR" secondAttribute="top" id="6iM-dY-Uq7"/>
+                                    <constraint firstAttribute="bottom" secondItem="QyH-oO-kjC" secondAttribute="bottom" id="81R-Bp-b10"/>
+                                    <constraint firstItem="QyH-oO-kjC" firstAttribute="height" secondItem="R6T-2u-Pgz" secondAttribute="height" id="P6M-B0-g6u"/>
+                                    <constraint firstItem="rnO-LY-LKL" firstAttribute="top" secondItem="xQi-P5-GST" secondAttribute="bottom" constant="50" id="Qbr-N7-yRW"/>
+                                    <constraint firstItem="xQi-P5-GST" firstAttribute="leading" secondItem="19j-Mg-KcR" secondAttribute="leading" constant="62" id="TBR-JS-IwI"/>
+                                    <constraint firstItem="rnO-LY-LKL" firstAttribute="height" secondItem="R6T-2u-Pgz" secondAttribute="height" id="TQQ-1z-vnJ"/>
+                                    <constraint firstItem="xQi-P5-GST" firstAttribute="top" secondItem="R6T-2u-Pgz" secondAttribute="bottom" constant="50" id="Yxg-qf-5zK"/>
+                                    <constraint firstItem="QyH-oO-kjC" firstAttribute="top" secondItem="rnO-LY-LKL" secondAttribute="bottom" constant="50" id="ceS-4k-oj6"/>
+                                    <constraint firstAttribute="trailing" secondItem="R6T-2u-Pgz" secondAttribute="trailing" constant="62" id="ebp-pC-coX"/>
+                                    <constraint firstItem="R6T-2u-Pgz" firstAttribute="leading" secondItem="19j-Mg-KcR" secondAttribute="leading" constant="62" id="fDi-fW-c7c"/>
+                                    <constraint firstItem="rnO-LY-LKL" firstAttribute="leading" secondItem="19j-Mg-KcR" secondAttribute="leading" constant="62" id="hbg-CE-5Lg"/>
+                                    <constraint firstItem="QyH-oO-kjC" firstAttribute="leading" secondItem="19j-Mg-KcR" secondAttribute="leading" constant="62" id="iIN-g7-gWk"/>
+                                    <constraint firstAttribute="trailing" secondItem="xQi-P5-GST" secondAttribute="trailing" constant="62" id="iwE-xG-NRZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="QyH-oO-kjC" secondAttribute="trailing" constant="62" id="p3v-K5-zss"/>
+                                    <constraint firstItem="xQi-P5-GST" firstAttribute="height" secondItem="R6T-2u-Pgz" secondAttribute="height" id="qh3-0K-VkG"/>
+                                    <constraint firstItem="rnO-LY-LKL" firstAttribute="width" secondItem="R6T-2u-Pgz" secondAttribute="width" id="tWD-mc-8Yn"/>
+                                    <constraint firstItem="xQi-P5-GST" firstAttribute="width" secondItem="R6T-2u-Pgz" secondAttribute="width" id="tpo-DB-hkF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="19j-Mg-KcR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Iqy-kW-OYG"/>
+                            <constraint firstItem="19j-Mg-KcR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ciF-7N-I9n"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aO5-Qa-L0F"/>
+                    <connections>
+                        <outlet property="comparedPhotoBtn" destination="xQi-P5-GST" id="eqN-2u-ZhK"/>
+                        <outlet property="sourcePhotoBtn" destination="R6T-2u-Pgz" id="Ywv-uE-3uk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2724" y="92.203898050974516"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xTA-5Z-nF9">
+            <objects>
+                <navigationController id="E3I-jp-UC8" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9dy-MT-Irp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XKb-xh-tYR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LKM-PV-VWC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3479" y="94"/>
+        </scene>
+    </scenes>
+</document>
