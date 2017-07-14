@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		824746A11F186AB3003F2DAB /* SeparateComparedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 824746A01F186AB3003F2DAB /* SeparateComparedView.m */; };
+		824746A41F186AF6003F2DAB /* IntegrateComparedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 824746A31F186AF6003F2DAB /* IntegrateComparedView.m */; };
 		828EABC31E83AFE9001C4611 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 828EABC21E83AFE9001C4611 /* main.m */; };
 		828EABC61E83AFE9001C4611 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 828EABC51E83AFE9001C4611 /* AppDelegate.m */; };
 		828EABC91E83AFE9001C4611 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 828EABC81E83AFE9001C4611 /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8247469F1F186AB3003F2DAB /* SeparateComparedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparateComparedView.h; sourceTree = "<group>"; };
+		824746A01F186AB3003F2DAB /* SeparateComparedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparateComparedView.m; sourceTree = "<group>"; };
+		824746A21F186AF6003F2DAB /* IntegrateComparedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntegrateComparedView.h; sourceTree = "<group>"; };
+		824746A31F186AF6003F2DAB /* IntegrateComparedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntegrateComparedView.m; sourceTree = "<group>"; };
 		828EABBE1E83AFE9001C4611 /* photoCompare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoCompare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		828EABC21E83AFE9001C4611 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		828EABC41E83AFE9001C4611 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +48,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		824746981F1865D8003F2DAB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8247469F1F186AB3003F2DAB /* SeparateComparedView.h */,
+				824746A01F186AB3003F2DAB /* SeparateComparedView.m */,
+				824746A21F186AF6003F2DAB /* IntegrateComparedView.h */,
+				824746A31F186AF6003F2DAB /* IntegrateComparedView.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
 		828EABB51E83AFE9001C4611 = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +78,7 @@
 		828EABC01E83AFE9001C4611 /* photoCompare */ = {
 			isa = PBXGroup;
 			children = (
+				824746981F1865D8003F2DAB /* Components */,
 				828EABC41E83AFE9001C4611 /* AppDelegate.h */,
 				828EABC51E83AFE9001C4611 /* AppDelegate.m */,
 				828EABC71E83AFE9001C4611 /* ViewController.h */,
@@ -156,10 +174,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				824746A11F186AB3003F2DAB /* SeparateComparedView.m in Sources */,
 				828EABC91E83AFE9001C4611 /* ViewController.m in Sources */,
 				828EABC61E83AFE9001C4611 /* AppDelegate.m in Sources */,
 				828EABC31E83AFE9001C4611 /* main.m in Sources */,
 				828EABDA1E83B038001C4611 /* ResultViewController.m in Sources */,
+				824746A41F186AF6003F2DAB /* IntegrateComparedView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
